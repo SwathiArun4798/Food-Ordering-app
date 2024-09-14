@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.title-container {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #ff5200;
+}
+
+label{
+    font-weight: bold;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.6);
+    overflow: hidden;
+    width: 100%;
+}
+
+input[type=text],input[type=password]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.btn{
+    background-color: #ff5200;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+span, #error{
+    color: #ff5200;
+    font-weight: bold;
+    font-size: 15px;
+}

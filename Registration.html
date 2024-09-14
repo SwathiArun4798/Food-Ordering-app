@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./css/Registration.css" />
+  <title>Food Ordering Application - Registration Form</title>
+  <script src="./js/Registration.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title-container">
+      <h2 class="title">Sign Up</h2>
+      <img src="./images/food-icon.png" alt="Food Icon" width="100" height="100" />
+    </div>
+    <form method="post" id="form">
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="name" placeholder="Enter Name..." onchange="validate(id)" required />
+          <span id="nameErr"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="userName">Username</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="userName" name="userName" placeholder="Enter Username..." onchange="validate(id)" required />
+          <span id="userNameErr"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Enter Email ID..." onchange="validate(id)" required />
+          <span id="emailErr"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="phoneNo">Phone Number</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="phoneNo" name="phoneNo" placeholder="Enter Phone Number..." onchange="validate(id)"
+            required maxlength="10" />
+          <span id="phoneNoErr"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="password" name="password" placeholder="Enter Password..." onchange="validate(id)"
+            required />
+          <span id="passwordErr"></span>
+        </div>
+      </div>
+      <div class="row">
+        <button type="submit" class="btn" onclick="register(event)">
+          Register
+        </button>
+      </div>
+      <div class="row">
+        <p>
+          Already have an account?
+          <a href="Login.html">Login to your account</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
